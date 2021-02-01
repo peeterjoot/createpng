@@ -13,7 +13,8 @@ int main(int argc,char **argv)
         0,255,0,        0,0,255};
 
    // Initialise ImageMagick library
-   InitializeMagick(*argv);
+   //InitializeMagick(*argv);
+   InitializeMagick(""); // https://legacy.imagemagick.org/discourse-server/viewtopic.php?t=9581
 
    // Create Image object and read in from pixel data above
    Image image; 
