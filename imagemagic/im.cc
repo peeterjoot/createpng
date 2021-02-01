@@ -30,7 +30,8 @@ int main(int argc, char **argv) {
   RGB pix[width * height];
 
   for (int j = 0; j < height; j++) {
-    double c = cos( 2 * M_PI * j/height );
+    //double c = cos( 2 * M_PI * j/ height );
+    double c = 2.0 * j/height - 1.0 ;
 
     for (int i = 0; i < width; i++) {
         double s = sin( 2 * M_PI * i/ width );
