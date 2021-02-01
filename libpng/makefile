@@ -22,7 +22,6 @@ pngtry : pngtry.o
 	$(CXX) $(CXXFLAGS) $(filter %.o,$^) -o $@ $(LDFLAGS) $(LOADLIBES) 
 
 clean:
-	rm -f $(TARGETS) *.o *.d
+	rm -f $(TARGETS) *.o *.d *.png
 
 -include $(wildcard *.d)
-all : try
